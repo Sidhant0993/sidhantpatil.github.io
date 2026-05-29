@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidhant Patil — Cybersecurity Professional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --white:#ffffff;
+  --off:#f8f9fb;
+  --off2:#f1f3f7;
+  --border:#e2e6ed;
+  --border2:#ccd3de;
+  --text:#0f1923;
+  --text2:#4a5568;
+  --text3:#8a96a8;
+  --blue:#1b4f8a;
+  --blue2:#2563ae;
+  --blue-light:#eef4fd;
+  --blue-mid:#c3d8f5;
+  --accent:#c9873a;
+  --accent-light:#fdf3e8;
+  --green:#1a7a4a;
+  --green-light:#e8f5ee;
+  --display:'Instrument Serif',serif;
+  --body:'Plus Jakarta Sans',sans-serif;
+  --mono:'Geist Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.7;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 3.5rem;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav-brand{display:flex;align-items:center;gap:10px}
+.nav-mono{width:34px;height:34px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-family:var(--body);font-size:13px;font-weight:600;color:#fff;letter-spacing:0.02em}
+.nav-name{font-size:15px;font-weight:600;color:var(--text)}
+.nav-title{font-size:12px;color:var(--text3);font-weight:400}
+.nav-links{display:flex;gap:0;list-style:none}
+.nav-links a{display:block;padding:6px 16px;font-size:13px;font-weight:500;color:var(--text2);text-decoration:none;transition:color .15s}
+.nav-links a:hover,.nav-links a.active{color:var(--blue)}
+.nav-cta{padding:8px 20px;background:var(--blue);color:#fff;font-size:13px;font-weight:500;text-decoration:none;transition:background .15s}
+.nav-cta:hover{background:var(--blue2)}
+
+/* HERO */
+.hero{padding:120px 3.5rem 80px;max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:5rem;align-items:center}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:1.75rem}
+.eyebrow-pill{font-family:var(--mono);font-size:11px;color:var(--blue);background:var(--blue-light);border:1px solid var(--blue-mid);padding:4px 12px;letter-spacing:0.05em}
+.avail-pill{font-family:var(--mono);font-size:11px;color:var(--green);background:var(--green-light);border:1px solid #a3d4b8;padding:4px 12px;display:flex;align-items:center;gap:6px}
+.avail-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:var(--display);font-size:clamp(2.8rem,5vw,4.5rem);font-weight:400;line-height:1.08;letter-spacing:-0.01em;margin-bottom:1.5rem;color:var(--text)}
+.hero h1 em{font-style:italic;color:var(--blue)}
+.hero-bio{font-size:16px;font-weight:300;color:var(--text2);line-height:1.85;margin-bottom:2.25rem;max-width:500px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:3rem}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;background:var(--blue);color:#fff;font-size:14px;font-weight:500;text-decoration:none;transition:background .15s}
+.btn-primary:hover{background:var(--blue2)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;background:transparent;color:var(--text);font-size:14px;font-weight:500;text-decoration:none;border:1px solid var(--border2);transition:border-color .15s,color .15s}
+.btn-secondary:hover{border-color:var(--blue);color:var(--blue)}
+.hero-meta{display:flex;gap:2.5rem;flex-wrap:wrap}
+.hero-meta-item{display:flex;flex-direction:column}
+.hero-meta-num{font-family:var(--display);font-size:2rem;font-weight:400;color:var(--text);line-height:1}
+.hero-meta-label{font-size:12px;color:var(--text3);font-weight:400;margin-top:4px}
+
+/* Hero right card */
+.hero-card{background:var(--off);border:1px solid var(--border);padding:2rem}
+.hero-card-header{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
+.hero-initials{width:48px;height:48px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.3rem;color:#fff}
+.hero-card-name{font-size:15px;font-weight:600;color:var(--text)}
+.hero-card-role{font-size:13px;color:var(--text3);font-weight:400}
+.card-row{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
+.card-row:last-child{border-bottom:none}
+.card-icon{width:32px;height:32px;background:var(--blue-light);border:1px solid var(--blue-mid);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.card-icon svg{width:15px;height:15px;stroke:var(--blue);stroke-width:1.75;fill:none}
+.card-label{font-size:11px;color:var(--text3);font-weight:500;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:2px}
+.card-value{font-size:13px;color:var(--text);font-weight:400}
+
+/* SECTION */
+.section{padding:5.5rem 3.5rem;max-width:1160px;margin:0 auto}
+.section-full{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.section-full .section{padding:5.5rem 3.5rem}
+
+.s-label{font-family:var(--mono);font-size:11px;color:var(--text3);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:.75rem}
+.s-title{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:400;line-height:1.15;letter-spacing:-0.01em;margin-bottom:.75rem;color:var(--text)}
+.s-title em{font-style:italic;color:var(--blue)}
+.s-desc{font-size:15px;color:var(--text2);font-weight:300;max-width:560px;line-height:1.8}
+.section-head{margin-bottom:3rem}
+
+/* DIVIDER */
+.divider{border:none;border-top:1px solid var(--border)}
+
+/* VALUE PROPS */
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.value-card{background:var(--white);padding:2.25rem 2rem}
+.value-num{font-family:var(--mono);font-size:11px;color:var(--text3);letter-spacing:0.1em;margin-bottom:1.25rem}
+.value-title{font-size:16px;font-weight:600;color:var(--text);margin-bottom:.75rem}
+.value-text{font-size:14px;color:var(--text2);font-weight:300;line-height:1.8}
+
+/* SKILLS */
+.skills-wrap{display:grid;grid-template-columns:1fr 360px;gap:3.5rem;align-items:start}
+.skill-bars{display:flex;flex-direction:column;gap:1.5rem}
+.sb-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
+.sb-name{font-size:14px;font-weight:500;color:var(--text)}
+.sb-level{font-family:var(--mono);font-size:11px;color:var(--text3)}
+.sb-track{height:3px;background:var(--border);position:relative;overflow:hidden}
+.sb-fill{height:100%;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform 1s cubic-bezier(.4,0,.2,1)}
+.skill-cats{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border)}
+.skill-cat{background:var(--white);padding:1.25rem 1.5rem}
+.skill-cat-title{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:.75rem}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:12px;color:var(--text2);background:var(--off2);border:1px solid var(--border);padding:3px 10px;font-weight:400}
+
+/* EXPERIENCE */
+.exp-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--border)}
+.exp-item{padding:2.25rem 2.5rem;border-bottom:1px solid var(--border);display:grid;grid-template-columns:180px 1fr;gap:2.5rem}
+.exp-item:last-child{border-bottom:none}
+.exp-date{font-family:var(--mono);font-size:11px;color:var(--text3);letter-spacing:0.05em;line-height:1.6;margin-bottom:.75rem}
+.exp-badge{display:inline-block;font-family:var(--mono);font-size:10px;color:var(--blue);background:var(--blue-light);border:1px solid var(--blue-mid);padding:2px 8px;letter-spacing:0.06em}
+.exp-role{font-size:17px;font-weight:600;color:var(--text);margin-bottom:3px}
+.exp-company{font-size:14px;color:var(--blue2);font-weight:500;margin-bottom:2px}
+.exp-loc{font-size:13px;color:var(--text3);font-weight:300;margin-bottom:1.25rem}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.exp-bullets li{font-size:14px;color:var(--text2);font-weight:300;padding-left:1.2rem;position:relative;line-height:1.7}
+.exp-bullets li::before{content:'–';position:absolute;left:0;color:var(--text3)}
+.exp-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:1rem}
+.exp-tag{font-size:11px;color:var(--text3);background:var(--off2);border:1px solid var(--border);padding:2px 9px;font-family:var(--mono)}
+
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.proj-card{background:var(--white);padding:2.25rem 2rem;display:flex;flex-direction:column;transition:background .2s}
+.proj-card:hover{background:var(--off)}
+.proj-type{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.proj-type::before{content:'';width:20px;height:1px;background:var(--border2)}
+.proj-title{font-family:var(--display);font-size:1.15rem;font-weight:400;color:var(--text);line-height:1.3;margin-bottom:.85rem}
+.proj-desc{font-size:13px;color:var(--text2);font-weight:300;line-height:1.8;flex:1;margin-bottom:1.5rem}
+.proj-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:1.25rem}
+.proj-tag{font-size:11px;color:var(--blue);background:var(--blue-light);border:1px solid var(--blue-mid);padding:2px 8px;font-family:var(--mono)}
+.proj-impact{font-size:12px;color:var(--text3);font-weight:400;padding-top:1rem;border-top:1px solid var(--border);font-family:var(--mono);letter-spacing:0.03em}
+
+/* EDUCATION */
+.edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.edu-card{background:var(--white);padding:2rem}
+.edu-level{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem}
+.edu-degree{font-size:16px;font-weight:600;color:var(--text);margin-bottom:.35rem;line-height:1.3}
+.edu-school{font-size:13px;color:var(--text2);font-weight:300;margin-bottom:.85rem}
+.edu-grade{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--accent);background:var(--accent-light);border:1px solid #e8c8a0;padding:3px 10px;margin-bottom:.65rem}
+.edu-year{font-family:var(--mono);font-size:11px;color:var(--text3);margin-bottom:.85rem}
+.edu-modules{font-size:12px;color:var(--text3);line-height:1.75;padding-top:.85rem;border-top:1px solid var(--border)}
+
+/* CERTS */
+.certs-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin-top:2.5rem}
+.cert-card{background:var(--white);padding:2rem 2rem;display:flex;gap:1.25rem;align-items:flex-start}
+.cert-badge{width:44px;height:44px;background:var(--accent-light);border:1px solid #e8c8a0;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cert-badge svg{width:22px;height:22px;stroke:var(--accent);stroke-width:1.5;fill:none}
+.cert-issuer{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px}
+.cert-name{font-size:15px;font-weight:600;color:var(--text);margin-bottom:3px}
+.cert-desc{font-size:13px;color:var(--text2);font-weight:300}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border)}
+.contact-left{padding:3.5rem;border-right:1px solid var(--border)}
+.contact-right{padding:3.5rem;background:var(--off)}
+.contact-heading{font-family:var(--display);font-size:clamp(2rem,3.5vw,3rem);font-weight:400;line-height:1.1;margin-bottom:1.25rem}
+.contact-heading em{font-style:italic;color:var(--blue)}
+.contact-body{font-size:15px;color:var(--text2);font-weight:300;line-height:1.85;margin-bottom:2.5rem}
+.open-roles{margin-top:2.5rem}
+.open-label{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:.85rem}
+.role-chips{display:flex;flex-wrap:wrap;gap:7px}
+.role-chip{font-size:13px;color:var(--text2);border:1px solid var(--border2);padding:5px 14px;font-weight:400;background:var(--white)}
+.contact-items{display:flex;flex-direction:column;gap:1px;background:var(--border)}
+.contact-item{background:var(--white);padding:1.35rem 1.5rem;display:flex;align-items:center;gap:1rem;text-decoration:none;transition:background .15s}
+.contact-item:hover{background:var(--off2)}
+.c-icon{width:36px;height:36px;background:var(--blue-light);border:1px solid var(--blue-mid);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.c-icon svg{width:16px;height:16px;stroke:var(--blue);stroke-width:1.75;fill:none}
+.c-label{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2px}
+.c-value{font-size:14px;color:var(--text);font-weight:400}
+.c-arrow{margin-left:auto;font-size:14px;color:var(--text3);transition:color .15s,transform .15s}
+.contact-item:hover .c-arrow{color:var(--blue);transform:translateX(3px)}
+
+/* FOOTER */
+footer{padding:1.75rem 3.5rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border)}
+.footer-copy{font-size:13px;color:var(--text3)}
+.footer-avail{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;color:var(--green)}
+.f-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 2s infinite}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* HERO ANIM */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero-left>*{opacity:0;animation:fadeUp .55s ease forwards}
+.hero-eyebrow{animation-delay:.08s}
+.hero h1{animation-delay:.2s}
+.hero-bio{animation-delay:.32s}
+.hero-actions{animation-delay:.42s}
+.hero-meta{animation-delay:.5s}
+.hero-card{opacity:0;animation:fadeUp .55s .35s ease forwards}
+
+@media(max-width:900px){
+  nav{padding:0 1.5rem}
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;padding:100px 1.5rem 3.5rem;gap:2.5rem}
+  .section,.section-full .section{padding:4rem 1.5rem}
+  .value-grid,.skills-wrap,.projects-grid,.edu-grid,.contact-grid,.certs-grid{grid-template-columns:1fr}
+  .exp-item{grid-template-columns:1fr}
+  .contact-left{border-right:none;border-bottom:1px solid var(--border)}
+  footer{padding:1.5rem;flex-direction:column;gap:.75rem;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-mono">SP</div>
+    <div>
+      <div class="nav-name">Sidhant Patil</div>
+      <div class="nav-title">Cybersecurity Professional · Dublin</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#" class="nav-cta" onclick="downloadCV(event)">↓ Download CV</a>
+</nav>
+
+<!-- HERO -->
+<div style="border-bottom:1px solid var(--border)">
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-pill">Cybersecurity · SOC · CTI · IAM</span>
+      <span class="avail-pill"><span class="avail-dot"></span>Available Now</span>
+    </div>
+    <h1>Security analyst.<br><em>Threat hunter.</em><br>Problem solver.</h1>
+    <p class="hero-bio">3+ years in SOC operations, cyber threat intelligence, and identity management within a regulated 24/7 banking environment. Based in Dublin on Stamp 1G — eligible for full-time employment with no restrictions.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get in touch →</a>
+      <a href="#" class="btn-secondary" onclick="downloadCV(event)">↓ Download CV</a>
+      <a href="https://www.linkedin.com/in/sidhantpatil/" target="_blank" class="btn-secondary">LinkedIn ↗</a>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hero-meta-num">3+</span>
+        <span class="hero-meta-label">Years in security</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-num">100+</span>
+        <span class="hero-meta-label">Alerts triaged daily</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-num">20+</span>
+        <span class="hero-meta-label">Incidents / month</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-num">CEH</span>
+        <span class="hero-meta-label">EC-Council certified</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-header">
+      <div class="hero-initials">SP</div>
+      <div>
+        <div class="hero-card-name">Sidhant Patil</div>
+        <div class="hero-card-role">Cybersecurity Analyst</div>
+      </div>
+    </div>
+    <div class="card-row">
+      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div>
+        <div class="card-label">Location</div>
+        <div class="card-value">Dublin 1, Ireland · Stamp 1G</div>
+      </div>
+    </div>
+    <div class="card-row">
+      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div>
+        <div class="card-label">Email</div>
+        <div class="card-value">siddhantpatil778@gmail.com</div>
+      </div>
+    </div>
+    <div class="card-row">
+      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+      <div>
+        <div class="card-label">Phone</div>
+        <div class="card-value">089 491 3605</div>
+      </div>
+    </div>
+    <div class="card-row">
+      <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <div>
+        <div class="card-label">Certifications</div>
+        <div class="card-value">CEH v11 · Certified DevSecOps Professional</div>
+      </div>
+    </div>
+    <div class="card-row">
+      <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <div>
+        <div class="card-label">Education</div>
+        <div class="card-value">MSc Cybersecurity · NCI Dublin</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ABOUT / VALUE -->
+<div class="section reveal" id="about">
+  <div class="section-head">
+    <div class="s-label">01 — What I offer</div>
+    <h2 class="s-title">Why hire <em>me</em></h2>
+  </div>
+  <div class="value-grid">
+    <div class="value-card reveal">
+      <div class="value-num">01</div>
+      <div class="value-title">Threat-Informed Detection</div>
+      <div class="value-text">I don't just triage alerts — I map adversary behaviour to MITRE ATT&CK, identify TTPs, and tune SIEM correlation rules to detect what matters. In a 24/7 banking SOC I reduced false positives by 5% while improving targeted attack detection.</div>
+    </div>
+    <div class="value-card reveal">
+      <div class="value-num">02</div>
+      <div class="value-title">Intelligence-Led Operations</div>
+      <div class="value-text">Using MISP, OpenCTI, and STIX/TAXII I operationalise threat intelligence — enriching IOCs, correlating campaigns, and feeding detection pipelines with actionable context. Combined with malware analysis experience including Clop ransomware dissection.</div>
+    </div>
+    <div class="value-card reveal">
+      <div class="value-num">03</div>
+      <div class="value-title">Identity & Access Governance</div>
+      <div class="value-text">From JML lifecycle management to RBAC enforcement across Active Directory, Azure Entra ID, and AWS IAM — I keep the identity perimeter tight. Identity is the most exploited entry point in modern breaches; I've built the controls to defend it.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ABOUT NARRATIVE -->
+<div class="section reveal">
+  <div class="section-head" style="max-width:700px">
+    <div class="s-label">02 — Background</div>
+    <h2 class="s-title" style="margin-bottom:1.5rem">About me</h2>
+    <p style="font-size:16px;color:var(--text2);font-weight:300;line-height:1.9;margin-bottom:1.25rem">I'm a cybersecurity professional whose career began in IT administration — which gave me a deep appreciation for the infrastructure I now defend. Understanding how systems are built is half the work of knowing how to protect them.</p>
+    <p style="font-size:16px;color:var(--text2);font-weight:300;line-height:1.9;margin-bottom:1.25rem">At <strong style="color:var(--text);font-weight:500">ESDS Software Solutions</strong>, I worked inside a regulated 24/7 banking SOC handling phishing campaigns, brute-force attacks, malware infections, and credential misuse — learning to triage fast, investigate deep, and communicate findings clearly under pressure.</p>
+    <p style="font-size:16px;color:var(--text2);font-weight:300;line-height:1.9;margin-bottom:1.25rem">My <strong style="color:var(--text);font-weight:500">MSc in Cybersecurity</strong> from National College of Ireland sharpened my technical foundations in malware analysis, cryptography, forensics, and cloud security. My thesis — a blockchain-based healthcare records system — applied security engineering to a real-world data sovereignty problem.</p>
+    <p style="font-size:16px;color:var(--text2);font-weight:300;line-height:1.9">I'm now based in Dublin on a <strong style="color:var(--text);font-weight:500">Stamp 1G visa</strong> — full-time employment eligible, no restrictions — and actively looking for roles in SOC analysis, CTI, IAM, or security engineering.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- SKILLS -->
+<div class="section-full">
+<div class="section reveal" id="skills">
+  <div class="section-head">
+    <div class="s-label">03 — Capabilities</div>
+    <h2 class="s-title">Skills & <em>tooling</em></h2>
+  </div>
+  <div class="skills-wrap">
+    <div>
+      <p style="font-family:var(--mono);font-size:11px;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.5rem">Competency proficiency</p>
+      <div class="skill-bars" id="skill-bars">
+        <div>
+          <div class="sb-header"><span class="sb-name">SOC Operations & Incident Response</span><span class="sb-level">Advanced</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="0.92"></div></div>
+        </div>
+        <div>
+          <div class="sb-header"><span class="sb-name">SIEM — QRadar / Splunk / Seceon</span><span class="sb-level">Advanced</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="0.88"></div></div>
+        </div>
+        <div>
+          <div class="sb-header"><span class="sb-name">Cyber Threat Intelligence (CTI)</span><span class="sb-level">Advanced</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="0.85"></div></div>
+        </div>
+        <div>
+          <div class="sb-header"><span class="sb-name">Malware Analysis & Forensics</span><span class="sb-level">Proficient</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="0.80"></div></div>
+        </div>
+        <div>
+          <div class="sb-header"><span class="sb-name">Identity & Access Management</span><span class="sb-level">Proficient</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="0.82"></div></div>
+        </div>
+        <div>
+          <div class="sb-header"><span class="sb-name">Vulnerability Management</span><span class="sb-level">Proficient</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="0.78"></div></div>
+        </div>
+        <div>
+          <div class="sb-header"><span class="sb-name">Scripting — Python / PowerShell / KQL</span><span class="sb-level">Proficient</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="0.74"></div></div>
+        </div>
+        <div>
+          <div class="sb-header"><span class="sb-name">Cloud Security — AWS / Azure</span><span class="sb-level">Intermediate</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="0.66"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="skill-cats">
+      <div class="skill-cat">
+        <div class="skill-cat-title">Threat Intelligence</div>
+        <div class="tags"><span class="tag">MITRE ATT&CK</span><span class="tag">MISP</span><span class="tag">OpenCTI</span><span class="tag">STIX/TAXII</span><span class="tag">TheHive</span><span class="tag">IOC Analysis</span><span class="tag">OSINT</span></div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">SIEM & Detection</div>
+        <div class="tags"><span class="tag">IBM QRadar</span><span class="tag">Splunk</span><span class="tag">Seceon</span><span class="tag">MS Defender XDR</span><span class="tag">KQL</span><span class="tag">Correlation Rules</span></div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">Malware & Forensics</div>
+        <div class="tags"><span class="tag">Static Analysis</span><span class="tag">Dynamic Analysis</span><span class="tag">Ransomware TTPs</span><span class="tag">Digital Forensics</span><span class="tag">Mobile Forensics</span><span class="tag">Wireshark</span></div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">Vuln Management & Testing</div>
+        <div class="tags"><span class="tag">Nessus</span><span class="tag">Burp Suite</span><span class="tag">OWASP ZAP</span><span class="tag">OWASP Top 10</span><span class="tag">Nmap</span><span class="tag">Postman</span></div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">IAM & Frameworks</div>
+        <div class="tags"><span class="tag">Active Directory</span><span class="tag">Azure Entra ID</span><span class="tag">AWS IAM</span><span class="tag">RBAC</span><span class="tag">JML Lifecycle</span><span class="tag">ISO 27001</span><span class="tag">NIST CSF</span><span class="tag">GDPR</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section reveal" id="experience">
+  <div class="section-head">
+    <div class="s-label">04 — Career History</div>
+    <h2 class="s-title">Work <em>experience</em></h2>
+  </div>
+  <div class="exp-list">
+
+    <div class="exp-item reveal">
+      <div>
+        <div class="exp-date">Apr 2025 – Present</div>
+        <div class="exp-badge">Current · Freelance</div>
+      </div>
+      <div>
+        <div class="exp-role">Security Researcher</div>
+        <div class="exp-company">BugCrowd · Integrity · HackerOne</div>
+        <div class="exp-loc">Remote</div>
+        <ul class="exp-bullets">
+          <li>Conduct web application and API security testing across OWASP Top 10, mapping findings to MITRE ATT&CK adversary behaviours.</li>
+          <li>Identify authentication flaws, broken access control, and injection vulnerabilities using Burp Suite, OWASP ZAP, and Postman.</li>
+          <li>Produce structured vulnerability reports with PoC, CVSS scoring, impact assessment, and remediation guidance for responsible disclosure.</li>
+        </ul>
+        <div class="exp-tags"><span class="exp-tag">Burp Suite</span><span class="exp-tag">OWASP Top 10</span><span class="exp-tag">MITRE ATT&CK</span><span class="exp-tag">API Security</span><span class="exp-tag">Postman</span></div>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div>
+        <div class="exp-date">Mar 2023 – Oct 2023</div>
+        <div class="exp-badge">Banking SOC · 24/7</div>
+      </div>
+      <div>
+        <div class="exp-role">Security Engineer</div>
+        <div class="exp-company">ESDS Software Solutions Pvt. Ltd.</div>
+        <div class="exp-loc">Nashik, India</div>
+        <ul class="exp-bullets">
+          <li>Monitored and triaged 100+ daily alerts in IBM QRadar and Seceon; escalated 20+ confirmed incidents per month across phishing, brute-force, malware, and unauthorised access.</li>
+          <li>Investigated multi-source logs — authentication, firewall, IDS/IPS, VPN, network, endpoint — to identify IOCs and map activity to MITRE ATT&CK for root cause analysis.</li>
+          <li>Conducted endpoint investigations using Microsoft Defender EDR/XDR, analysing malicious attachments, credential misuse, and phishing indicators.</li>
+          <li>Tuned SIEM correlation rules across multiple log sources, reducing false positives by 5% and improving detection of targeted attack patterns.</li>
+          <li>Performed vulnerability assessments using Nessus, OWASP ZAP, and Burp Suite; validated findings and supported prioritised remediation.</li>
+          <li>Produced weekly security reports for management summarising alert trends, confirmed incidents, and remediation status.</li>
+        </ul>
+        <div class="exp-tags"><span class="exp-tag">IBM QRadar</span><span class="exp-tag">Seceon</span><span class="exp-tag">MS Defender XDR</span><span class="exp-tag">MITRE ATT&CK</span><span class="exp-tag">Nessus</span><span class="exp-tag">IOC Analysis</span><span class="exp-tag">Incident Response</span></div>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div>
+        <div class="exp-date">Jun 2021 – Feb 2023</div>
+        <div class="exp-badge">Full-time</div>
+      </div>
+      <div>
+        <div class="exp-role">IT Engineer — Security & Administration</div>
+        <div class="exp-company">Vedant Engineering Services</div>
+        <div class="exp-loc">Nashik, India</div>
+        <ul class="exp-bullets">
+          <li>Administered Active Directory and Microsoft 365 for 50+ users; managed user identities, group policies, MFA configurations, and resolved authentication issues.</li>
+          <li>Executed Joiner–Mover–Leaver (JML) processes for 10+ users per month using least-privilege and RBAC principles to enforce access lifecycle governance.</li>
+          <li>Managed provisioning and deprovisioning across enterprise systems including VPN and directory services.</li>
+          <li>Performed endpoint hardening, patch management, and network troubleshooting (TCP/IP, DNS, VPN).</li>
+        </ul>
+        <div class="exp-tags"><span class="exp-tag">Active Directory</span><span class="exp-tag">Microsoft 365</span><span class="exp-tag">RBAC</span><span class="exp-tag">JML Lifecycle</span><span class="exp-tag">MFA</span><span class="exp-tag">Endpoint Hardening</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- PROJECTS -->
+<div class="section-full">
+<div class="section reveal" id="projects">
+  <div class="section-head">
+    <div class="s-label">05 — Portfolio</div>
+    <h2 class="s-title">Projects & <em>research</em></h2>
+    <p class="s-desc">Applied security work spanning malware analysis, digital forensics, blockchain, DevSecOps, and cloud security.</p>
+  </div>
+  <div class="projects-grid">
+
+    <div class="proj-card reveal">
+      <div class="proj-type">Malware Analysis</div>
+      <div class="proj-title">Clop Ransomware Analysis</div>
+      <p class="proj-desc">Conducted in-depth static and dynamic analysis of the Clop ransomware family — one of the most prolific ransomware-as-a-service operations responsible for major financial sector breaches. Examined encryption mechanisms, persistence techniques, lateral movement patterns, and C2 communication, mapping findings to MITRE ATT&CK tactics and techniques.</p>
+      <div class="proj-tags"><span class="proj-tag">Static Analysis</span><span class="proj-tag">Dynamic Analysis</span><span class="proj-tag">MITRE ATT&CK</span><span class="proj-tag">Ransomware</span><span class="proj-tag">Malware TTPs</span></div>
+      <div class="proj-impact">Encryption logic · Persistence mechanisms · C2 infrastructure mapping</div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-type">Digital Forensics</div>
+      <div class="proj-title">WhatsApp Forensics Investigation</div>
+      <p class="proj-desc">Performed mobile forensics investigation on WhatsApp application data — extracting and analysing chat databases, media files, call logs, and deleted message artefacts from Android storage. Applied digital forensics methodology to preserve evidence integrity, reconstruct communication timelines, and document findings in a forensically sound manner suitable for legal proceedings.</p>
+      <div class="proj-tags"><span class="proj-tag">Mobile Forensics</span><span class="proj-tag">SQLite Analysis</span><span class="proj-tag">Evidence Preservation</span><span class="proj-tag">Android</span><span class="proj-tag">eDiscovery</span></div>
+      <div class="proj-impact">Chat recovery · Timeline reconstruction · Forensically sound documentation</div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-type">Master's Thesis</div>
+      <div class="proj-title">Secure Medical Records via Ethereum Blockchain</div>
+      <p class="proj-desc">Designed a patient-centric healthcare records system on Ethereum. Smart contracts enforce access control, AES-256 encryption secures data at rest, and the decentralised architecture eliminates single points of failure — directly addressing the high-value target healthcare data represents for ransomware actors.</p>
+      <div class="proj-tags"><span class="proj-tag">Ethereum</span><span class="proj-tag">Solidity</span><span class="proj-tag">AES-256</span><span class="proj-tag">Smart Contracts</span><span class="proj-tag">Blockchain</span></div>
+      <div class="proj-impact">Patient data sovereignty · Tamper-evident audit trail · Zero centralised breach surface</div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-type">Application Security</div>
+      <div class="proj-title">DevSecOps CI/CD Security Pipeline</div>
+      <p class="proj-desc">Built a full DevSecOps pipeline embedding security at every stage — SAST for code-level issues, DAST for running applications, SCA for vulnerable dependencies, and IaC scanning to prevent misconfigurations from reaching production. Automates what would otherwise require manual security review at every release.</p>
+      <div class="proj-tags"><span class="proj-tag">SAST</span><span class="proj-tag">DAST</span><span class="proj-tag">SCA</span><span class="proj-tag">IaC Scanning</span><span class="proj-tag">CI/CD</span><span class="proj-tag">DevSecOps</span></div>
+      <div class="proj-impact">Shift-left security · Automated detection · Reduced deployment risk</div>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-type">Cloud Security</div>
+      <div class="proj-title">Secure Application Deployment on AWS</div>
+      <p class="proj-desc">Deployed and hardened a WordPress application on AWS applying least-privilege IAM roles, restrictive security groups, VPC network segmentation, CloudTrail audit logging, and GuardDuty monitoring — eliminating common cloud misconfiguration risks that attackers actively scan for.</p>
+      <div class="proj-tags"><span class="proj-tag">AWS IAM</span><span class="proj-tag">Security Groups</span><span class="proj-tag">VPC</span><span class="proj-tag">CloudTrail</span><span class="proj-tag">Least Privilege</span></div>
+      <div class="proj-impact">Misconfiguration risk reduced · Full audit logging · Tightly scoped access</div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- EDUCATION -->
+<div class="section reveal" id="education">
+  <div class="section-head">
+    <div class="s-label">06 — Academic Background</div>
+    <h2 class="s-title">Education & <em>certifications</em></h2>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-level">Postgraduate · QQI Level 9</div>
+      <div class="edu-degree">MSc Cybersecurity</div>
+      <div class="edu-school">National College of Ireland, Dublin</div>
+      <div class="edu-grade">2nd Class Honours</div>
+      <div class="edu-year">Jan 2024 – Feb 2025</div>
+      <div class="edu-modules">Malware Analysis (74%) · Cryptography & Blockchain (84%) · Network Security & Pen Testing · Cloud Architecture & Security · Forensics & eDiscovery · AI/ML in Cybersecurity</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-level">Postgraduate · Part-time</div>
+      <div class="edu-degree">MCS Computer Science</div>
+      <div class="edu-school">Gokhale College of Science, Pune University</div>
+      <div class="edu-grade">7.53 CGPA — Grade A</div>
+      <div class="edu-year">Jun 2021 – Nov 2023</div>
+      <div class="edu-modules">Completed alongside full-time IT engineering role — demonstrating commitment to continuous professional development while working in industry.</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-level">Undergraduate</div>
+      <div class="edu-degree">BSc Computer Science</div>
+      <div class="edu-school">Gokhale College of Science, Pune University</div>
+      <div class="edu-grade">8.4 CGPA — First Class Distinction</div>
+      <div class="edu-year">Jun 2018 – Jun 2021</div>
+      <div class="edu-modules">Strong foundation in computer science, algorithms, networking, and software engineering — underpinning all security work with deep technical grounding.</div>
+    </div>
+  </div>
+
+  <div style="margin-top:2.5rem">
+    <div class="s-label" style="margin-bottom:1.25rem">Professional Certifications</div>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-badge"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div>
+          <div class="cert-issuer">EC-Council</div>
+          <div class="cert-name">CEH v11</div>
+          <div class="cert-desc">Certified Ethical Hacker — offensive security, penetration testing, vulnerability exploitation methodology</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-badge"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div>
+          <div class="cert-issuer">Practical DevSecOps</div>
+          <div class="cert-name">CDP</div>
+          <div class="cert-desc">Certified DevSecOps Professional — CI/CD security, SAST/DAST tooling, shift-left security practices</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- CONTACT -->
+<div class="section reveal" id="contact">
+  <div class="section-head">
+    <div class="s-label">07 — Let's Talk</div>
+    <h2 class="s-title">Open to <em>opportunities</em></h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-left">
+      <h2 class="contact-heading">Let's work<br><em>together.</em></h2>
+      <p class="contact-body">I'm actively looking for full-time roles in Ireland. Whether you're scaling your SOC, need a CTI analyst, or want someone who can own IAM governance — I'd welcome a conversation.</p>
+      <div class="open-roles">
+        <div class="open-label">Open to roles in</div>
+        <div class="role-chips">
+          <span class="role-chip">SOC Analyst L1/L2</span>
+          <span class="role-chip">CTI Analyst</span>
+          <span class="role-chip">IAM Engineer</span>
+          <span class="role-chip">Security Engineer</span>
+          <span class="role-chip">Incident Responder</span>
+          <span class="role-chip">Vulnerability Analyst</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="contact-items">
+        <a href="mailto:siddhantpatil778@gmail.com" class="contact-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="c-label">Email</div><div class="c-value">siddhantpatil778@gmail.com</div></div>
+          <div class="c-arrow">→</div>
+        </a>
+        <a href="tel:+353894913605" class="contact-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="c-label">Phone</div><div class="c-value">089 491 3605</div></div>
+          <div class="c-arrow">→</div>
+        </a>
+        <a href="https://www.linkedin.com/in/sidhantpatil/" target="_blank" class="contact-item">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          <div><div class="c-label">LinkedIn</div><div class="c-value">linkedin.com/in/sidhantpatil</div></div>
+          <div class="c-arrow">→</div>
+        </a>
+        <div class="contact-item" style="cursor:pointer" onclick="downloadCV(event)">
+          <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+          <div><div class="c-label">Resume</div><div class="c-value">Download CV (PDF)</div></div>
+          <div class="c-arrow">↓</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy">© 2025 Sidhant Patil · Cybersecurity Professional · Dublin, Ireland</div>
+  <div class="footer-avail"><div class="f-dot"></div>Available for hire · Stamp 1G</div>
+</footer>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold:0.08, rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Skill bars
+const barObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.sb-fill').forEach((bar, i) => {
+        const w = bar.dataset.w;
+        setTimeout(() => { bar.style.transform = `scaleX(${w})`; }, i * 90);
+      });
+      barObs.unobserve(e.target);
+    }
+  });
+}, {threshold:0.2});
+const barSection = document.getElementById('skill-bars');
+if(barSection) barObs.observe(barSection);
+
+// Active nav
+const sections = ['about','skills','experience','projects','education','contact'];
+const navAs = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if(el && window.scrollY >= el.offsetTop - 100) cur = id;
+  });
+  navAs.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+  });
+}, {passive:true});
+
+// CV placeholder
+function downloadCV(e){
+  e.preventDefault();
+  alert('To enable CV download:\n\n1. Upload your CV PDF to your hosting (e.g. cv-sidhant-patil.pdf)\n2. Find the downloadCV function in the HTML\n3. Replace the alert with:\n   window.location.href = "cv-sidhant-patil.pdf"');
+}
+</script>
+</body>
+</html>
